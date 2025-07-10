@@ -9,8 +9,10 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Ullamco incididunt pariatur exercitation consequat dolore sint. Excepteur veniam fugiat do et sunt."
-						}
+							"text": "Unleash your potential by harmonizing your daily tasks and habits with your unique energy rhythms.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -20,15 +22,17 @@
 					{
 						"type": "heading1",
 						"content": {
-							"text": "Function"
-						}
+							"text": "Productivity that flows\nwith your life.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
 			"button_text": {
 				"__TYPE__": "FieldContent",
-				"value": "swing",
-				"type": "Text"
+				"type": "Text",
+				"value": "Try for free"
 			},
 			"button_link": {
 				"key": "d009d30d-05fe-4573-8760-9d8edd305f02",
@@ -36,29 +40,32 @@
 				"value": {
 					"__TYPE__": "ExternalLink",
 					"url": "http://twitter.com",
+					"target": "_blank",
 					"text": "missing"
 				}
 			},
 			"image": {
-				"__TYPE__": "ImageContent",
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NTIwOTM5MDF8MA&ixlib=rb-4.1.0&q=85",
+				"alt": "orange fruits under blue sky during daytime",
 				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
-					"width": 5616,
-					"height": 3744
+					"id": "eaOjEz8746k",
+					"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NTIwOTM5MDF8MA&ixlib=rb-4.1.0&q=85",
+					"width": 5688,
+					"height": 3792
 				},
-				"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
-				"width": 5616,
-				"height": 3744,
+				"width": 5688,
+				"height": 3792,
 				"edit": {
+					"background": "transparent",
 					"zoom": 1,
 					"crop": {
 						"x": 0,
 						"y": 0
-					},
-					"background": "transparent"
+					}
 				},
-				"alt": "push",
+				"credits": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			}
 		},
