@@ -16,7 +16,7 @@ export type HeroProps = SliceComponentProps<Content.HeroSlice>;
  */
 const Hero: FC<HeroProps> = ({ slice }) => {
     return (
-        <Bounded className="flex flex-col items-center justify-center gap-8 py-5 text-center">
+        <Bounded className="flex flex-col items-center justify-center gap-8 text-center" data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
             <PrismicRichText field={slice.primary.heading} />
             <PrismicRichText field={slice.primary.body} />
             <PrismicLink field={slice.primary.button_link} label={slice.primary.button_text} />
