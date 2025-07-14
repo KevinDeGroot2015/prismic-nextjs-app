@@ -19,7 +19,7 @@ const Hero: FC<HeroProps> = ({ slice }) => {
         <Bounded className="flex flex-col items-center justify-center gap-8 text-center" data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
             <PrismicRichText field={slice.primary.heading} />
             <PrismicRichText field={slice.primary.body} />
-            <PrismicLink field={slice.primary.button_link} label={slice.primary.button_text} />
+            <PrismicLink field={slice.primary.button_link} label={slice.primary.button_text} as="Button" />
             <PrismicImage field={slice.primary.image} />
         </Bounded>
     );

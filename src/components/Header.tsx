@@ -15,7 +15,7 @@ export default async function Header() {
                 <ul>
                     {settings.data.navigation?.map(({ label, link }) => (
                         <li key={label}>
-                            <PrismicLink field={link} label={label} />
+                            <PrismicLink as="Link" field={link} label={label} />
                         </li>
                     ))}
                 </ul>
