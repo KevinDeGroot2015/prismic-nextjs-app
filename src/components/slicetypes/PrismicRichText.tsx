@@ -11,7 +11,7 @@ export default async function PrismicRichtext({ field }: PrismicRichTextProps) {
 
     return (
         <PrismicRichText field={field} components={{
-            heading1: ({ children }) => <h1 className="text-4xl md:text-7xl font-bold leading-tight tracking-tight font-display text-slate-700">{children}</h1>,
+            heading1: ({ children }) => <h1 className="text-4xl md:text-7xl font-bold leading-tight tracking-tight font-display text-slate-700 max-w-2xl">{children}</h1>,
             heading2: ({ children }) => <h2 className="text-3xl md:text-5xl font-bold leading-tight tracking-tight font-display text-slate-700">{children}</h2>,
             heading3: ({ children }) => <h3 className="text-2xl md:text-3xl font-bold leading-tight tracking-tight font-display text-slate-700">{children}</h3>,
             heading4: ({ children }) => <h4 className="text-xl md:text-2xl font-bold leading-tight tracking-tight font-display text-slate-700">{children}</h4>,
