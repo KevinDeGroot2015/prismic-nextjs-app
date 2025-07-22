@@ -10,8 +10,8 @@ type PrismicLinkProps = {
 
 export default async function PrismicLink({ as = "Link", field, className, label }: PrismicLinkProps) {
     const isButton = as === "Button";
-    const buttonClasses = "bg-cyan-700 hover:bg-cyan-900 rounded-full text-white px-5 py-3 transition-colors duration-200";
-    const linkClasses = "underline text-cyan-700 hover:text-cyan-900";
+    const buttonClasses = "bg-cyan-700 hover:bg-cyan-900 rounded-full text-white px-5 py-3 transition-colors duration-200 w-fit";
+    const linkClasses = "underline text-cyan-700 hover:text-cyan-900 w-fit";
     const combinedClassName = `${className} ${isButton ? buttonClasses : linkClasses}`.trim();
 
     return (

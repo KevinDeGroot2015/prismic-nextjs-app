@@ -16,12 +16,26 @@ export type HeroProps = SliceComponentProps<Content.HeroSlice>;
  */
 const Hero: FC<HeroProps> = ({ slice }) => {
     return (
-        <Bounded className="flex flex-col items-center justify-center gap-8 text-center" data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
-            <PrismicRichText field={slice.primary.heading} />
-            <PrismicRichText field={slice.primary.body} />
-            <PrismicLink field={slice.primary.button_link} label={slice.primary.button_text} as="Button" />
-            <PrismicImage field={slice.primary.image} />
-        </Bounded>
+        <>
+            {slice.variation === "default" && (
+                <Bounded className="grid grid-cols-1 place-items-center gap-10 text-center" data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
+                    <PrismicRichText field={slice.primary.heading} />
+                    <PrismicRichText field={slice.primary.body} />
+                    <PrismicLink field={slice.primary.button_link} label={slice.primary.button_text} as="Button" />
+                    <PrismicImage field={slice.primary.image} />
+                </Bounded>
+            )}
+            {slice.variation === "horizontal" && (
+                <Bounded className="grid md:grid-cols-2 gap-10" data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
+                    <div className="grid grid-rows-[1fr,auto,auto] gap-10 h-fit">
+                        <PrismicRichText field={slice.primary.heading} />
+                        <PrismicRichText field={slice.primary.body} />
+                        <PrismicLink field={slice.primary.button_link} label={slice.primary.button_text} as="Button" />
+                    </div>
+                    <PrismicImage field={slice.primary.image} />
+                </Bounded>
+            )}
+        </>
     );
 };
 
